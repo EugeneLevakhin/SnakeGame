@@ -214,6 +214,8 @@ namespace SnakeGame
             return part;
         }
 
+        // check the bit with the coordinates x and y is in the body of the snake
+        // if checkTailOnly = true - check the head is hit tail (x and y in this case must be coordinates of head)
         private bool ClashIsOccurred(double x, double y, bool checkTailOnly = false) 
         {
             foreach (var item in snake)
